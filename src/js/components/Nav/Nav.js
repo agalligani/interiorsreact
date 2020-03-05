@@ -22,8 +22,8 @@ export default class MainNav extends Component {
       <div className={`sticky-wrapper ${this.state.navBarClass}`}>
         <Navbar expand="lg" className={"sticky-wrapper"}>
           <Navbar.Brand href="#home">
-            <span class="logo1">TERRAT</span>
-            <span class="logo2">interiors</span>
+            <span className="logo1">TERRAT</span>
+            <span className="logo2">interiors</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <FontAwesomeIcon icon="bars" focusable="true" />

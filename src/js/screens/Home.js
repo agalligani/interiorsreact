@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Parallax, Background } from "react-parallax";
 import Agency from "../components/Agency/Agency";
-import Projects from "../components/Projects/Projects";
 import SmoothImage from "../../assets/images/smooth.jpeg";
 import StourImage from "../../assets/images/elmsImg1.jpg";
 

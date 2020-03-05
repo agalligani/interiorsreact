@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import Nav from "../js/components/Nav/Nav";
 import Home from "../js/screens/Home";
+import Projects from "../js/screens/Projects";
 import Footer from "../js/components/Footer/Footer";
 
 import {
@@ -40,9 +41,13 @@ export default class App extends Component {
     return (
       <Router>
         <Nav navBarClass={this.state.navBarClass}></Nav>
-        <Route path="/home" render={() => <div>Home</div>} />
         <div>
           <Switch>
+            <Route path="/projects">
+              {() => {
+                return <Projects />;
+              }}
+            </Route>
             <Route path="/">
               {() => {
                 return <Home />;
