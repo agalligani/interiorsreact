@@ -40,14 +40,6 @@ module.exports = {
           }
         ]
       },
-      //   {
-      //     test: /\.(png|jpg|jpeg|svg|gif)$/,
-      //     use: [
-      //       {
-      //         loader: "file-loader" // load images
-      //       }
-      //     ]
-      //   },
       {
         test: /\.(png|jpg|jpeg|svg|gif)$/,
         use: [
@@ -57,7 +49,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(scss)$/,
+        test: /\.(scss|css)$/,
         use: [
           {
             loader: "style-loader" // inject CSS to page
@@ -85,6 +77,13 @@ module.exports = {
     historyApiFallback: true
   },
   plugins: [
+    // Causes error. Might want to use & replace
+    // jQuery script tag in html
+    // new webpack.ProvidePlugin({
+    //   $: "jquery",
+    //   jQuery: "jquery",
+    //   "window.jQuery": "jquery"
+    // }),
     new HtmlWebPackPlugin({
       title: "development",
       template: "./src/index.html",

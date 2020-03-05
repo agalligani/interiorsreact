@@ -17,28 +17,54 @@ export default class Projects extends Component {
   render() {
     return (
       <Container>
-        <div class="container">
-          <Row>
-            <Col>
-              <OwlCarouselLoop />
-            </Col>
-          </Row>
-          <div class="row align-items-start">
-            <div class="col">One of three columns</div>
-            <div class="col">One of three columns</div>
-            <div class="col">One of three columns</div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col">One of three columns</div>
-            <div class="col">One of three columns</div>
-            <div class="col">One of three columns</div>
-          </div>
-          <div class="row align-items-end">
-            <div class="col">One of three columns</div>
-            <div class="col">One of three columns</div>
-            <div class="col">One of three columns</div>
-          </div>
-        </div>
+        <Row className="project-row">
+          <Col className="col col-md-10">
+            <h1>Mid-Century Modern Cottage</h1>
+            <p>
+              Vestibulum id ligula porta felis euismod semper. Praesent commodo
+              cursus magna, vel scelerisque nisl consectetur et. Donec
+              ullamcorper nulla non metus auctor fringilla. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam.
+            </p>
+          </Col>
+        </Row>
+        <Row className="carousel-row">
+          <Col className="col col-md-10">
+            <OwlCarouselLoop />
+          </Col>
+        </Row>
+        <Row className="project-row">
+          <Col className="col col-md-10">
+            <h1>Classic Beacon Hill Townhome</h1>
+            <p>
+              Vestibulum id ligula porta felis euismod semper. Praesent commodo
+              cursus magna, vel scelerisque nisl consectetur et. Donec
+              ullamcorper nulla non metus auctor fringilla. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam.
+            </p>
+          </Col>
+        </Row>
+        <Row className="carousel-row">
+          <Col className="col col-md-10">
+            <OwlCarouselLoop />
+          </Col>
+        </Row>
+        <Row className="project-row">
+          <Col className="col col-md-10">
+            <h1>Contemporary Pied-à-Terre</h1>
+            <p>
+              Vestibulum id ligula porta felis euismod semper. Praesent commodo
+              cursus magna, vel scelerisque nisl consectetur et. Donec
+              ullamcorper nulla non metus auctor fringilla. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam.
+            </p>
+          </Col>
+        </Row>
+        <Row className="carousel-row">
+          <Col className="col col-md-10">
+            <OwlCarouselLoop />
+          </Col>
+        </Row>
       </Container>
     );
   }
