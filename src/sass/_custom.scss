@@ -1,0 +1,210 @@
+//Colors
+$flambeau-orange: #dd9933;
+$flambeau-dark-brown: #553311;
+$flambeau-red: #aa3311;
+$body-bg: #ffffff;
+
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$gray-100: #6c757d;
+$gray-600: #6c757d;
+$gray-800: #6c757d;
+
+$primary: $flambeau-red;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $orange !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+$dark-brown: $flambeau-dark-brown;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "dark-brown": $dark-brown
+  ),
+  $theme-colors
+);
+
+//Typography
+:root {
+  font-size: 62.5%;
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+}
+
+h1 {
+  font-family: "Chakra Petch Bold", sans-serif;
+}
+
+p {
+  text-align: justify !important;
+}
+/* Other possible font choices: */
+// font-family: 'Roboto Condensed', sans-serif;
+// font-family: 'Roboto Slab', serif;
+// font-family: 'Chakra Petch', sans-serif;
+
+$navbar-brand-font-size: 2.3rem;
+$banner-font-size: 2.7rem;
+
+svg.svg-inline--fa.fa-bars {
+  color: $flambeau-orange !important;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+.logo1 {
+  font-family: "Chakra Petch Bold", sans-serif;
+  color: #444444 !important;
+}
+
+.logo2 {
+  color: #663333 !important;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//Navigation
+
+.sticky-wrapper {
+  position: relative;
+}
+
+.sticky .sticky-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+$navbar-brown-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$flambeau-orange}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+
+.dropdown-menu {
+  font-size: 2.8rem !important;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    align-self: flex-end !important;
+    flex-direction: row-reverse;
+  }
+
+  .dropdown-menu {
+    font-size: 2.4rem !important;
+  }
+
+  .nav-links a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.8rem !important;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: #663333 !important;
+  }
+
+  .nav-links a:hover {
+    font-weight: bold;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+}
+
+.navbar-area {
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  height: 4em;
+  top: 0;
+  z-index: 9999;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  background: rgba(200, 200, 200, 0.8);
+}
+
+.navbar-area-fixed {
+  background: #665555;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.06);
+  box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.06);
+  height: 2.3em;
+  .nav-links a {
+    color: #cccccc !important;
+  }
+}
+
+// button.navbar-toggler.collapsed {
+//   border: solid 1px $flambeau-orange;
+// font-size: 1.7rem;
+// }
+
+body {
+  font-size: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+button {
+  font-size: inherit;
+}
+
+.jarallax {
+  min-height: 50vh;
+}
+
+.jarallax-wrap {
+  position: relative;
+  background-color: #e4e4e6;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  // jarallax will use position: absolute and we can add border radius to images
+  transform: translateX(0);
+}
+
+.jarallax-controls {
+  padding: 20px;
+}
+
+.jarallax-remove-btn {
+  color: #fff;
+}
+
+//footer
+
+footer {
+  font-family: "Chakra Petch Bold", sans-serif;
+  margin-top: 9rem;
+  background-color: #999;
+  .copyright {
+    font-family: "Roboto Condensed Bold", sans-serif;
+    font-size: 1.5rem;
+  }
+}
