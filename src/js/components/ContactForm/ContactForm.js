@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 export default class ContactForm extends Component {
   state = {
@@ -7,4 +7,12 @@ export default class ContactForm extends Component {
     emailAddress: "",
     message: ""
   };
+
+  render() {
+    return (
+      <Fragment>
+        <div>Contact</div>
+      </Fragment>
+    );
+  }
 }

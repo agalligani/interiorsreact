@@ -1,4 +1,7 @@
 //Colors
+$navbar-text-color: #665555;
+$navbar-fixed-bg-color: #cfd8dc;
+
 $flambeau-orange: #dd9933;
 $flambeau-dark-brown: #553311;
 $flambeau-red: #aa3311;
@@ -156,12 +159,13 @@ $navbar-brown-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3
 }
 
 .navbar-area-fixed {
-  background: #665555;
+  // background: #665555;
+  background: #cfd8dc;
   -webkit-box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.06);
   box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.06);
   height: 2.3em;
   .nav-links a {
-    color: #cccccc !important;
+    color: #665555 !important;
   }
 }
 
