@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Parallax, Background } from "react-parallax";
-import Agency from "../components/Agency/Agency";
 import TextColumn from "../components/TextColumn/TextColumn";
+
 import {
   homeIndex,
   mainphoto,
