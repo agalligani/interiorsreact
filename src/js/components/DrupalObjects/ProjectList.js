@@ -60,13 +60,15 @@ export default class ProjectList extends React.Component {
               <Row id={`node-${node.nid}`} key={index}>
                 <Col className="col col-md-10">
                   <h1>{node.title}</h1>
-                  <div>{node.main_image}</div>
+                  <img src={node.field_main_image} />
                   {node.body}
                 </Col>
               </Row>
               <Row className="carousel-row">
                 <Col className="col col-md-10">
-                  <OwlCarouselLoop />
+                  <OwlCarouselLoop
+                    images={node.field_project_images.split(",")}
+                  />
                 </Col>
               </Row>
             </Fragment>

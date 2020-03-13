@@ -1,3 +1,3 @@
 export default {
-  drupal_url: "http://terratlocal.com"
+  drupal_url: "http://admin.terratinteriors.com"
 };

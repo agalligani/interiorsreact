@@ -18,27 +18,26 @@ const events = {
 
 export default class OwlCarouselLoop extends Component {
   state = {
-    images: [
-      { url: "/src/assets/images/pic10.29.png", alt: "pic 1" },
-      { url: "/src/assets/images/pic10.57.png", alt: "pic 2" },
-      { url: "/src/assets/images/pic11.15.png", alt: "pic 3" },
-      { url: "/src/assets/images/pic11.26.png", alt: "pic 4" },
-      { url: "/src/assets/images/pic11.40.png", alt: "pic 5" },
-      { url: "/src/assets/images/pic10.57.png", alt: "pic 2" },
-      { url: "/src/assets/images/pic11.15.png", alt: "pic 3" },
-      { url: "/src/assets/images/pic11.26.png", alt: "pic 4" }
-    ]
+    images: this.props.images
   };
+
+  componentDidMount() {
+    this.setState({ images: this.props.images });
+    console.log(this.props.images);
+    console.log(this.state.images);
+  }
 
   _hydrateCarousel = () => {
     let pics = this.state.images.map((pic, i) => {
       return (
         <div key={i} className="item">
-          <img src={pic.url} alt={pic.alt} />
+          <img src={pic} />
           <h4>{i}</h4>
         </div>
       );
     });
+    console.log(pics);
+
     return pics;
   };
 
