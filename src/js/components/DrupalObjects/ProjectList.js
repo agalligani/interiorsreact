@@ -5,6 +5,7 @@ import ajax from "../../../ajax";
 import querystring from "querystring";
 import { Row, Col } from "react-bootstrap";
 import OwlCarouselLoop from "../../components/OwlCarousel/OwlCarouselLoop";
+import parse from "html-react-parser";
 
 // Create an emitter object so that we can do pub/sub
 const emitter = new events.EventEmitter();
@@ -61,7 +62,7 @@ export default class ProjectList extends React.Component {
                 <Col className="col col-md-10">
                   <h1>{node.title}</h1>
                   <img src={node.field_main_image} />
-                  {node.body}
+                  {parse(node.body)}
                 </Col>
               </Row>
               <Row className="carousel-row">

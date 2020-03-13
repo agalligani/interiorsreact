@@ -28,17 +28,13 @@ export default class OwlCarouselLoop extends Component {
   }
 
   _hydrateCarousel = () => {
-    let pics = this.state.images.map((pic, i) => {
+    return this.state.images.map((pic, i) => {
       return (
         <div key={i} className="item">
           <img src={pic} />
-          <h4>{i}</h4>
         </div>
       );
     });
-    console.log(pics);
-
-    return pics;
   };
 
   render() {
