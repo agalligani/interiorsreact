@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import ReactDOM from "react-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import Nav from "../js/components/Nav/Nav";
+import Nav from "../js/components/Nav/NewNav";
 import Home from "../js/screens/Home";
 import Portfolio from "../js/screens/Portfolio";
 import Projects from "../js/screens/Projects";
@@ -41,7 +41,7 @@ export default class App extends Component {
     console.log("router render", this.state.navBarClass);
     return (
       <Router>
-        <Nav navBarClass={this.state.navBarClass}></Nav>
+        <Nav></Nav>
         <div>
           <Switch>
             <Route path="/about">
