@@ -4,13 +4,15 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import Nav from "../js/components/Nav/NewNav";
 import Home from "../js/screens/Home";
 import Portfolio from "../js/screens/Portfolio";
+import Login from "../js/screens/Login";
 import Projects from "../js/screens/Projects";
 import Footer from "../js/components/Footer/Footer";
 
 import {
   faCheckSquare,
   faCoffee,
-  faBars
+  faBars,
+  faHouzz
 } from "@fortawesome/free-solid-svg-icons";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -52,6 +54,11 @@ export default class App extends Component {
             <Route path="/projects">
               {() => {
                 return <Projects />;
+              }}
+            </Route>
+            <Route path="/login">
+              {() => {
+                return <Login />;
               }}
             </Route>
             <Route path="/">
